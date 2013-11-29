@@ -1,0 +1,7 @@
+<h2>List of uploaded files</h2>
+<ul>
+  <% @uploads.each do |upload| %>
+    <li><%= link_to "file", upload.filepath %></li>
+  <% end %>
+</ul>
+<%= link_to "New upload", new_upload_path %>
